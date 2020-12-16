@@ -2,7 +2,11 @@
 
 require_once("config.php");
 
-$lista = Usuario::search("aio");
-echo json_encode($lista);
+$user = new Usuario();
+$user->loadById(6);
+
+$user->update("professor", "951753");
+
+echo $user;
 
 ?>
