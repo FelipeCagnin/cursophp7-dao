@@ -3,9 +3,9 @@
 require_once("config.php");
 
 $user = new Usuario();
-$user->loadById(6);
+$user->loadById(5);
 
-$user->update("professor", "951753");
+$user->delete();
 
 echo $user;
 
